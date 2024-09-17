@@ -7,4 +7,3 @@ Eduardo Tebexerini Abreu,
 Pedro Albertini Fernandes Pinto
 
 https://pedro-albertini.github.io/SiteGoku/
-tem menu de contexto
