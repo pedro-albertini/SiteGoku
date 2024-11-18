@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="app.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<style>
+    body{
+        background: #ffffff;
+    }
+</style>
+
+<body onload="dados()">
+    <div class="maior">
+        <div class="divImagem">
+            <img src="assets/img/gokuLogin.webp" alt="gokuGrande" style="width: 400px; height: 600px;">
+        </div>
+        <div class="entrar">
+            <p id="pLogin" style="color: white;">Faça o seu cadastro!</p>
+            <input type="text" class="form-control form-control-sm" id="cadastroId" placeholder="Insira o login"><br><br><br>
+            <input type="password" class="form-control form-control-sm" id="senha1"
+                placeholder="Insira a senha"><br><br>
+                <button type="submit" onclick="cadastrar()" id='enviarLogin' class="btn btn-warning btn-sm">Cadastrar</button>
+            <a href="login.html" style="margin-top: 20px;">Ir para o login</a>
+        </div>
+    </div>
+</body>
+
+</html>

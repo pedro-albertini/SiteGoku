@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/goku.favicon.jfif">
+    <script src="app.js"></script>
+    <title>Site Goku</title>
+</head>
+
+<body onload="dados()">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/Goku.webp" width="30" height="30" class="d-inline-block align-center"
+                            alt="">
+                        DRAGON BALL
+                    </a>
+
+                    <button class="btn btn-warning"><a href="login.html">Login</a></button>
+                    
+                    <a href="carrinho.html"><img class="img-carrinho" src="assets/img/carrinho.svg"></a>
+
+                    <button class="btn btn-warning"><a href="cadastro.html">Cadastre-se</a></button>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página
+                                    atual)</span></a>
+                            <a class="nav-item nav-link" href="#sobrenos">Sobre nos</a>
+                            <a class="nav-item nav-link" href="#compras">Produtos</a>
+                            <a class="nav-item nav-link" href="carrinho.html">Carrinho</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div id="pagina-int" class="col-12">
+                <div class="bemVindo">
+                    <div class="resultado"></div>
+                </div>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0" id="sobrenos">Sobre Nós</p>
+                    <footer class="blockquote-footer" id="sub-sobrenos">Venha conhecer um pouco a historia do <cite
+                            title="Título da fonte">Dragon Ball</cite></footer>
+                    <button id="botao-sobrenos" class="btn btn-warning btn-sm"><a
+                            href="sobrenos.html">Vamos</a></button>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="compras" class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/funko-goku.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Funko Super-Sayajin R$170</h5>
+                        <p class="card-text">Pop Super-Sayajin Goku colecionável, detalhado, perfeito para fãs de
+                            Dragon Ball e decoração.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="1" data-name="Funko Super-Sayajin" data-price="170.00">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/dvd-dragonball.jpg"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">DVD Dragon Ball R$24,90</h5>
+                        <p class="card-text">DVD Dragon Ball Z com Goku se transformando em Super Sayajin. Clássico
+                            imperdível para fãs da série.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="4" data-name="DVD DragonBall" data-price="24.90">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/camisa-DG.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisa R$79,90</h5>
+                        <p class="card-text">Dragon Ball, com estampa dos personagens, confortável e
+                            ideal para fãs da série.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="7" data-name="Camisa" data-price="79.90">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/caneca-goku.jpeg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Caneca Dragon Ball-Goku R$22,80</h5>
+                        <p class="card-text">Caneca Dragon Ball com imagem de Goku. Ideal para fãs, resistente e
+                            perfeita para café diário.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="2" data-name="Caneca Goku" data-price="22.80">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/sheng long.jfif" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="prod1">Boneco Shenlong R$180</h5>
+                        <p class="card-text">Action figure de Shenlong, altamente detalhada, ideal para colecionadores e
+                            fãs de Dragon Ball.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="5" data-name="Boneoco Shenlong" data-price="180.00">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/meia-vegeta.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Meia do Vegeta R$39,90</h5>
+                        <p class="card-text">Meia Vegeta temática, confortável e estilosa, perfeita para fãs de Dragon
+                            Ball e uso diário.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="8" data-name="Meia Vegeta" data-price="39.90">Adicionar</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/garrafa-DG.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Garrafa Squezze DragonBall R$54,90</h5>
+                        <p class="card-text">Garrafa de água squeeze Dragon Ball, prática e durável, com design
+                            exclusivo para fãs da série.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="3" data-name="Garrafa" data-price="54.90">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/mochila-goku.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mochila do Goku R$66,90</h5>
+                        <p class="card-text">Mochila Goku temática de Dragon Ball, espaçosa e resistente. Ideal para fãs
+                            e uso diário.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="6" data-name="Mochila Goku" data-price="66.90">Adicionar</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" src="assets/img/esferas-dragao.webp"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Esferas do Dragão R$80</h5>
+                        <p class="card-text">Esferas do Dragão colecionáveis, detalhadas e brilhantes, perfeitas para
+                            fãs e decoração temática de Dragon Ball.</p>
+                            <button class="btn btn-warning add-to-cart" data-id="9" data-name="Esferas do Dragão" data-price="80.00">Adicionar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerOriginal">
+            <p>
+                Todos os direitos reservados©
+            </p>
+            <p>
+                <img src="assets/img/fotoFooter.jpg" style="width: 400px; height: 200px; border-radius: 50px;">
+            </p>
+            <p>
+                Site desevolvido por:<br>
+                Eduardo Tebexerini Abreu<br>
+                Pedro Albertini Fernandes Pinto
+            </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

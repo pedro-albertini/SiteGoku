@@ -1,0 +1,174 @@
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-carrinho{
+    width: 40px;
+    height: 40px;
+}
+.img-seta{
+    width: 20px;
+    height: 20px;
+}
+
+
+.maior{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.entrar{
+    background-color:#FF6800;
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 90vh;
+}
+
+#pLogin{
+    margin-bottom: 50px;
+    font-size: 22pt;
+    font-family: 'lato', sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+}
+
+#cadastroId{
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+
+#senha1{
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+
+#enviarLogin{
+    color: rgb(0, 0, 0);
+    width: 100px;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+
+.divImagem{
+    width: 40%;
+}
+
+#enviar{
+    color: white;
+}
+#login{
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#password{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#pagina-int{
+    height: 95vb;
+}
+#sobrenos{
+    margin-top: 70px;
+    font-size: 100px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+#sub-sobrenos{
+    font-size: 20px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+#botao-sobrenos{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+a, #botaoadd{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.card{
+    margin-bottom: 150px;
+}
+.card-button{
+    font-size: 20px;
+}
+.title-carrinho{
+    margin-bottom: 50px;
+}
+.container-sobrenos{
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    text-align: justify;
+}
+.container-carrosel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.bemVindo{
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.primeiroP{
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    transition: 1s;
+    font-size: 18.5px;
+    margin-bottom: 100px;
+}
+
+.primeiroP:hover{
+    box-shadow: 0px 0px 0px 2px #E0A800;
+}
+
+#teste{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+#daHistoria{
+    max-width: 960px;
+    margin-bottom: 50px;
+}
+
+.footerOriginal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background-color: #FED503;
+    padding: 30px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+.mais{
+    color: rgb(78, 188, 78);
+}

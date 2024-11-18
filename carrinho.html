@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/goku.favicon.jfif">
+    <script src="app.js"></script>
+    <title>Site Goku</title>
+</head>
+
+<body onload="dados()">
+    <div class="container-carrinho">
+        <div class="row" id="teste">
+            <div class="col-sm-1" id="daSeta">
+                <a class="nav-link active" href="index.html"><img class="img-seta" src="assets/img/seta-esq.svg"></a>
+            </div>
+            <div class="col-sm-11">
+                <blockquote class="blockquote text-center" id="daHistoria">
+                    <p class="mb-0" id="sobrenos">Carrinho</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container mt-5">
+                <div class="cart" style="margin-bottom: 100px;">
+                    <div id="cart-items"></div> <!-- Lista de itens do carrinho -->
+                    <div class="cart-summary">
+                        <p id="total-price">Total: R$ 0,00</p>
+                        <button data-toggle="modal" data-target="#paymentModal" class="btn btn-success">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal para seleção de método de pagamento -->
+            <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="paymentModalLabel">Selecione o Método de Pagamento</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="payment-form">
+                                <div class="form-group">
+                                    <label for="payment-method">Método de Pagamento</label>
+                                    <select class="form-control" id="payment-method">
+                                        <option value="cartao">MasterCard</option>
+                                        <option value="boleto">VISA</option>
+                                        <option value="debito">elo</option>
+                                        <option value="pix">Pix</option>
+                                    </select>
+                                </div>
+                            </form>
+        
+                            <!-- Espaço para exibir a imagem do método de pagamento -->
+                            <div id="payment-image-container" style="display: none; text-align: center;">
+                                <img id="credit-card-image" src="imagens/cartaoimagens.jpeg" alt="Imagem do Cartão de Crédito" style="max-width: 100%; height: auto; display: none;" />
+                                <img id="debit-card-image" src="imagens/cartaoimagens.jpeg" alt="Imagem do Cartão de Débito" style="max-width: 100%; height: auto; display: none;" />
+                                <img id="pix-image" src="imagens/qrcode.jfif" alt="Imagem do Pix" style="max-width: 100%; height: auto; display: none;" />
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" id="confirm-payment">Confirmar Pagamento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Exibição da compra finalizada -->
+            <div id="final-purchase-message" class="container mt-5" style="display: none;">
+                <h2>Compra Finalizada com Sucesso!</h2>
+                <p id="payment-method-confirmation"></p>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">Voltar para a Loja</button>
+            </div>
+
+             
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <footer class="footerOriginal">
+        <p>
+            Todos os direitos reservados©
+        </p>
+        <p>
+            <img src="assets/img/fotoFooter.jpg" style="width: 400px; height: 200px; border-radius: 50px;">
+        </p>
+        <p>
+            Site desevolvido por:<br>
+            Eduardo Tebexerini Abreu<br>
+            Pedro Albertini Fernandes Pinto
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
